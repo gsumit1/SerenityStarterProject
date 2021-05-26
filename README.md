@@ -1,2 +1,2 @@
 # SerenityStarterProject
-This is the Serenity, Selenium and Cucumber starter kit.
+This is the Serenity, Selenium and Cucumber starter kit
