@@ -1,13 +1,21 @@
-@Noon
-Feature: Title of your feature
-  I want to use this template for my feature file
+@Registration
+Feature: Register
 
-  @TopFive
-  Scenario: Title of your scenario
-    Given I am on the Noon
-    When I search Beverages
-    And I sort by price "Low to High"
-    Then publish the top five item prices
-    
+  @Smoke
+  Scenario: Register with username & passowrd
+    Given I am on travel portal
+    When I register with details
+      | UserName         | Sumit   |
+      | Password         | IBM@123 |
+      | Confirm Password | IBM@123 |
+    Then I should be successfully register
 
-
+  @BookingFlight
+  Scenario: Booking Flight
+    Given I am on travel portal
+    When I am searching flight
+      | TripType | OneWay    |
+      | Date     | November-15    |
+      | From     | London    |
+      | To       | Frankfurt |
+    Then I should be successfully booked flight

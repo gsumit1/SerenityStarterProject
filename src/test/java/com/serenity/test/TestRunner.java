@@ -2,7 +2,7 @@ package com.serenity.test;
 
 import org.junit.runner.RunWith;
 
-import cucumber.api.CucumberOptions;
+import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
@@ -15,7 +15,7 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 		,glue = {"com.serenity.stepdefinition"}
 		//,dryRun = true
 		,monochrome = true
-		,tags="@Noon"
+		,tags="@BookingFlight"
 		)
 public class TestRunner {
 
